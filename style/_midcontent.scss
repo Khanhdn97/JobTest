@@ -1,0 +1,55 @@
+#mid_content {
+    border-bottom: 1px solid #d9d9d9;
+    background: #e8ebf1;
+    height: 300px;
+
+    .mid_content_info {
+        float: left;
+        font-size: 13px;
+        margin-top: 60px;
+        width: 220px;
+
+        h2 {
+            font-size: 15px;
+            font-weight: bold;
+            height: 28px;
+            margin-bottom: 15px;
+            padding: 12px 0 0 59px;
+        }
+
+        p {
+            color: #363636;
+            line-height: 20px;
+            margin-bottom: 22px;
+        }
+
+        a {
+            color: #2aacc8;
+        
+            img {
+                margin: 0 8px 1px 0;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .mid_content_space {
+        margin-right: 40px;
+    }
+}
+#clean {
+    background: url(../images/pen_icon.png) no-repeat left;
+}
+
+#responsive {
+    background: url(../images/screen_icon.png) no-repeat left;
+}
+
+#fully {
+    background: url(../images/layer_icon.png) no-repeat left;
+}
+
+#ready {
+    background: url(../images/paperplane_icon.png) no-repeat left;
+}

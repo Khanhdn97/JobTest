@@ -1,0 +1,115 @@
+#footer {
+	background: #e8ebf1;
+	border-top: 1px solid #d9d9d9;
+	clear: both;
+	height: 320px;
+	margin-top: 40px;
+	p {
+		color: #363636;
+		font-size: 14px;
+	}
+	a {
+		color: #363636;
+		font-size: 14px;
+	}
+	h4 {
+		font-size: 15px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0 0 21px 0;
+	}
+}
+.footer_info {
+	float: left;
+	margin: 32px 0 40px 0;
+}
+#footer_about {
+	margin-right: 64px;
+	width: 238px;
+	p {
+		line-height: 17px;
+	}
+}
+#footer_explore {
+	margin-right: 64px;
+	li {
+		margin: 12px 0;
+		a {
+			text-transform: capitalize;
+			&:hover {
+				color: #2aacc8;
+			}
+		}
+	}
+}
+#footer_browse {
+	margin-right: 64px;
+	li {
+		margin: 12px 0;
+		a {
+			text-transform: capitalize;
+			&:hover {
+				color: #2aacc8;
+			}
+		}
+	}
+}
+#footer_contact {
+	p {
+		line-height: 17px;
+	}
+}
+#copyright {
+	line-height: 17px;
+}
+p#copyright {
+    clear: both;
+    float: left;
+    font-size: 13px;
+}
+#footer_connect {
+	float: right;
+	width: 213px;
+	h4 {
+		margin-left: 24px;
+	}
+	a {
+		display: block;
+		float: left;
+		height: 51px;
+		margin: 0 0 10px 18px;
+		text-indent: -9999px;
+		width: 53px;
+	}
+}
+#footer_logo {
+    background: url(../images/logo.png) no-repeat;
+    display: block;
+    float: right;
+    height: 37px;
+    text-indent: -9999px;
+    width: 148px;
+}
+#facebook {
+    background: url(../images/facebook_icon.png) no-repeat;
+}
+
+#dribbble {
+    background: url(../images/dribbble_icon.png) no-repeat;
+}
+
+#pinterest {
+    background: url(../images/pinterest_icon.png) no-repeat;
+}
+
+#linkedin {
+    background: url(../images/linkedin_icon.png) no-repeat;
+}
+
+#skype {
+    background: url(../images/skype_icon.png) no-repeat;
+}
+
+#sharethis {
+    background: url(../images/sharethis_icon.png) no-repeat;
+}

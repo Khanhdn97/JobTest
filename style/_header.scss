@@ -1,0 +1,123 @@
+#header {
+    background: #e8ebf1;
+    height: 120px;
+}
+
+
+#main_menu {
+    float: right;
+    margin-top: 54px;
+
+    .header_button {
+        display: none;
+    }
+
+    .first_list {
+        float: left;
+        margin: 0 14px;
+
+        &:hover ul {
+            visibility: visible;
+        }
+
+        .main_menu_first {
+            color: #000;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 8px 8px;
+            text-transform: uppercase;
+
+            &:hover {
+                border-top: 5px solid #2aacc8;
+            }
+        }
+    }
+
+
+    @include responsive(tablet) {
+        #header {
+            position: relative;
+        }
+
+        .header_button {
+            display: block;
+        }
+
+        .list {
+            background-color: #e8ebf1 ;
+            width: 100%;
+            float: none;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 150px;
+            left: 0;
+        }
+
+    }
+
+    .second_list {
+        margin: 0 5px;
+        padding: 10px;
+        border-bottom: 1px solid #e7e7e7;
+
+        .main_menu_second {
+            color: #000;
+            font-size: 13px;
+            text-transform: capitalize;
+
+            &:hover {
+                color: #2aacc8;
+            }
+        }
+    }
+
+    .with_dropdown {
+        position: relative;
+
+        ul {
+            background: #fff;
+            border-bottom: 5px solid #2aacc8;
+            padding: 12px 0;
+            position: absolute;
+            top: 24px;
+            visibility: hidden;
+            width: 197px;
+            text-decoration: none;
+
+            li {
+                a {
+                    display: block;
+                }
+            }
+        }
+
+        .main_menu_first {
+            background: url(../images/arrow_down.png) no-repeat 92%;
+            padding-right: 23px;
+        }
+
+        &:hover .main_menu_first {
+            background: #fff url(../images/arrow_down.png) no-repeat 92%;
+            border-top: 5px solid #2aacc8;
+            color: #2aacc8;
+        }
+    }
+
+    .main_current {
+        border-top: 5px solid #2aacc8;
+    }
+}
+
+h1 {
+    float: left;
+    margin-top: 37px;
+
+    a {
+        background: url(../images/logo.png) no-repeat;
+        display: block;
+        height: 37px;
+        text-indent: -9999px;
+        width: 148px;
+    }
+}

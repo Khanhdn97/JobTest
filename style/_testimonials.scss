@@ -1,0 +1,82 @@
+#testimonials {
+    clear: left;
+    float: left;
+    width: 430px;
+
+    h3 {
+        background: url(../images/speechcloud_icon.png) no-repeat left;
+        font-size: 15px;
+        font-weight: bold;
+        height: 18px;
+        margin: 19px 0 15px 0;
+        padding: 5px 0 0 38px;
+    }
+
+    p {
+        color: #363636;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .testimonial_name {
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+#clients {
+    float: right;
+    margin-bottom: 40px;
+
+    h3 {
+        background: url(../images/people_icon.png) no-repeat left;
+        font-size: 15px;
+        font-weight: bold;
+        height: 16px;
+        margin: 19px 0 15px 0;
+        padding: 4px 0 0 38px;
+    }
+
+    ul {
+        background: #e8ebf1;
+        height: 200px;
+        width: 480px;
+    }
+
+    img {
+        float: left;
+        margin: 1px;
+    }
+}
+#download {
+	margin: auto;
+	width: 1000px;
+	background: #e8fcfe;
+	border: 1px solid #81e4ed;
+	clear: both;
+	height: 78px;
+	padding: 30px 30px;
+	width: 940px;
+	p {
+		color: #363636;
+		float: left;
+		font-size: 16px;
+		line-height: 26px;
+		width: 608px;
+	}
+	a {
+		background: url(../images/download_button.png) no-repeat;
+		display: block;
+		color: #0d0707;
+		font-size: 18px;
+		font-weight: bold;
+		float: right;
+		height: 42px;
+		margin: 8px 8px 0 0;
+		padding: 22px 0 0 72px;
+		width: 172px;
+		&:hover {
+			color: #fff;
+		}
+	}
+}
