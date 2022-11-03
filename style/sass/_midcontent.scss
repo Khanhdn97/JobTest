@@ -2,7 +2,6 @@
     border-bottom: 1px solid #d9d9d9;
     background: #e8ebf1;
     height: 300px;
-
     .mid_content_info {
         float: left;
         font-size: 13px;
@@ -39,17 +38,27 @@
     }
 }
 #clean {
-    background: url(../images/pen_icon.png) no-repeat left;
+    background: url(../../images/pen_icon.png) no-repeat left;
 }
 
 #responsive {
-    background: url(../images/screen_icon.png) no-repeat left;
+    background: url(../../images/screen_icon.png) no-repeat left;
 }
 
 #fully {
-    background: url(../images/layer_icon.png) no-repeat left;
+    background: url(../../images/layer_icon.png) no-repeat left;
 }
 
 #ready {
-    background: url(../images/paperplane_icon.png) no-repeat left;
+    background: url(../../images/paperplane_icon.png) no-repeat left;
+}
+@include responsive(tablet){
+    #mid_content{
+        height: 600px;
+    }
+}
+@include responsive(phone){
+    #mid_content{
+        height: 1100px;
+    }
 }

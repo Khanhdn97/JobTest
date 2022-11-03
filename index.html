@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Job Test</title>
 </head>
 
@@ -15,10 +18,10 @@
         <div class="container">
 
             <h1><a href="#">BisLite</a></h1>
-            
+
             <div id="main_menu">
-                <button class="header_button">ABC</button>
-                <ul class="list">
+                <button class="header_button" onclick="buttonHeader()"><i class="fa fa-align-justify"></i></button>
+                <ul class="list toggle" id="menuList">
                     <li class="first_list"><a href="#" class="main_menu_first main_current">home</a></li>
                     <li class="first_list"><a href="#" class="main_menu_first">about us</a></li>
                     <li class="first_list with_dropdown">
@@ -74,7 +77,7 @@
                 <div id="slideshow_container">
 
                     <ul>
-                        <li><img src="images/banner_image.jpg" alt="banner1" /></li>
+                        <li><img style="width: 100%;" src="images/banner_image.jpg" alt="banner1" /></li>
                     </ul>
 
                     <div id="slideshow_pagination">
@@ -144,34 +147,36 @@
         </div> <!-- END #mid_content -->
 
         <div id="latest_works">
+            <div class="container">
+                <h3>LATEST WORKS</h3>
 
-            <h3>LATEST WORKS</h3>
+                <div id="carousel_nav">
 
-            <div id="carousel_nav">
+                    <a href="#"><img src="images/bluearrow_left.png" alt="arrow left" /></a>
+                    <a href="#"><img src="images/bluearrow_right.png" alt="arrow right" /></a>
 
-                <a href="#"><img src="images/bluearrow_left.png" alt="arrow left" /></a>
-                <a href="#"><img src="images/bluearrow_right.png" alt="arrow right" /></a>
+                </div> <!-- END #carousel_nav -->
 
-            </div> <!-- END #carousel_nav -->
+                <div id="carousel_wrapper">
 
-            <div id="carousel_wrapper">
+                    <ul>
+                        <li id="work01">
+                            <a href="#"><img src="images/sample_view.gif" alt="work01" /></a>
+                        </li>
+                        <li id="work02">
+                            <a href="#"><img src="images/sample_view.gif" alt="work02" /></a>
+                        </li>
+                        <li id="work03">
+                            <a href="#"><img src="images/sample_view.gif" alt="work03" /></a>
+                        </li>
+                        <li id="work04">
+                            <a href="#"><img src="images/sample_view.gif" alt="work04" /></a>
+                        </li>
+                    </ul>
 
-                <ul>
-                    <li id="work01">
-                        <a href="#"><img src="images/sample_view.gif" alt="work01" /></a>
-                    </li>
-                    <li id="work02">
-                        <a href="#"><img src="images/sample_view.gif" alt="work02" /></a>
-                    </li>
-                    <li id="work03">
-                        <a href="#"><img src="images/sample_view.gif" alt="work03" /></a>
-                    </li>
-                    <li id="work04">
-                        <a href="#"><img src="images/sample_view.gif" alt="work04" /></a>
-                    </li>
-                </ul>
+                </div> <!-- END #carousel_wrapper -->
+            </div>
 
-            </div> <!-- END #carousel_wrapper -->
 
         </div> <!-- END #latest_works -->
 
@@ -208,16 +213,19 @@
             </div> <!-- END #clients -->
 
         </div> <!-- END #bottom_content -->
+        <div class="container">
+            <div id="download">
 
-        <div id="download">
+                <p>This is a clean and modern, four column website PSD template. You can code it into a Wordpress
+                    website,
+                    HTML5 responsive website for your personal
+                    or client works. So ahead and download this wonderful PSD template!</p>
+                <a href="#">DOWNLOAD PSD</a>
 
-            <p>This is a clean and modern, four column website PSD template. You can code it into a Wordpress website,
-                HTML5 responsive website for your personal
-                or client works. So ahead and download this wonderful PSD template!</p>
-            <a href="#">DOWNLOAD PSD</a>
 
-        </div> <!-- END #download -->
 
+            </div> <!-- END #download -->
+        </div>
     </div> <!-- END #main_content -->
     <div id="footer">
 
@@ -302,6 +310,12 @@
         </div> <!-- END .container -->
 
     </div> <!-- END #footer -->
+    <script>
+        function buttonHeader() {
+            var ele = document.getElementById("menuList");
+            ele.classList.toggle("toggle");
+        }
+    </script>
 </body>
 
 </html>

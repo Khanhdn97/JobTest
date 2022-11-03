@@ -83,7 +83,7 @@ p#copyright {
 	}
 }
 #footer_logo {
-    background: url(../images/logo.png) no-repeat;
+    background: url(../../images/logo.png) no-repeat;
     display: block;
     float: right;
     height: 37px;
@@ -91,25 +91,35 @@ p#copyright {
     width: 148px;
 }
 #facebook {
-    background: url(../images/facebook_icon.png) no-repeat;
+    background: url(../../images/facebook_icon.png) no-repeat;
 }
 
 #dribbble {
-    background: url(../images/dribbble_icon.png) no-repeat;
+    background: url(../../images/dribbble_icon.png) no-repeat;
 }
 
 #pinterest {
-    background: url(../images/pinterest_icon.png) no-repeat;
+    background: url(../../images/pinterest_icon.png) no-repeat;
 }
 
 #linkedin {
-    background: url(../images/linkedin_icon.png) no-repeat;
+    background: url(../../images/linkedin_icon.png) no-repeat;
 }
 
 #skype {
-    background: url(../images/skype_icon.png) no-repeat;
+    background: url(../../images/skype_icon.png) no-repeat;
 }
 
 #sharethis {
-    background: url(../images/sharethis_icon.png) no-repeat;
+    background: url(../../images/sharethis_icon.png) no-repeat;
+}
+@include responsive (tablet){
+	#footer{
+		height: 600px;
+	}
+}
+@include responsive (phone){
+	#footer{
+		height: 850px;
+	}
 }
